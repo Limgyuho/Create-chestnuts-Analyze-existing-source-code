@@ -1,0 +1,38 @@
+body {
+    background-color: #333b58;
+}
+
+.ico-star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.ico-star-1 {
+    top: 25%;
+    left: 15%;
+    animation: clittering 1s infinite;
+}
+
+.ico-star-2 {
+    top: 43%;
+    right: 30%;
+    animation: clittering 3s infinite;
+}
+
+@keyframes clittering {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
